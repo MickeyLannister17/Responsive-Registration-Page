@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('bg-intro-desktop.png') hsl(0, 100%, 74%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.hero-section {
+    float: left;
+    color: rgb(255, 255, 255);
+    width: 500px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+h1.hero-title {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p.hero-text {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+section.container {
+    float: right;
+    padding: 20px;
+    padding-top: 40px;
+    
+}
+
+.top_button button{
+    padding: 12px;
+    border-radius: 5px;
+    background: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    box-shadow: 0 5px 5px hsla(0, 0%, 100%, 0.413);
+    color: rgb(255, 255, 255);
+    width: 90%;
+    margin: 25px;
+    width: 87%;
+    
+}
+
+.top_button button:hover{
+    background: hsl(248, 69%, 69%);
+    border: 1px solid hsl(248, 69%, 69%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+form {
+    background:hsl(0, 0%, 100%);
+    margin: 30px 45px 20px 30px;
+    padding: 15px 30px 0 10px;
+    box-shadow: 0 5px 5px hsla(0, 0%, 100%, 0.);
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+
+}
+
+input {
+    width: 100%;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid hsla(0, 4%, 78%, 0.944);
+    display: block;
+}
+
+.bottom_button button{
+    padding: 10px;
+    border-radius: 5px;
+    background: hsl(154, 59%, 51%);
+    border: 1px solid hsl(154, 59%, 51%);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 10px;
+}
+
+.bottom_button button:hover{
+    background: hsl(154, 91%, 66%);
+    border: 1px solid hsl(154, 91%, 66%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.terms>a {
+    color: hsl(0, 98%, 54%);
+    padding-bottom: 20px;
+}
+
+.form-control>img {
+    top: 10px; 
+    right: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control>small {
+    bottom: 0;
+    left: 10px;
+    font-style: italic;
+    position: absolute;
+    text-align: right;
+    visibility: hidden;
+}
+
+.form-control.error>input {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.form-control.error>img {
+    color:  rgb(255, 0, 0);
+    visibility: visible;
+}
+
+.form-control.error>small {
+    color:  rgb(255, 0, 0);
+    visibility: visible;
+}
+
+.form-control>.error {
+    border: none;
+    display: inline-block;
+    padding: 3px;
+    width: 100%;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    body {
+        background: url('bg-intro-mobile.png') hsl(0, 100%, 74%) ;
+        flex-direction: column;
+        margin: auto auto;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-section {
+        width: 90vw;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        
+    }
+    
+    h1.hero-title {
+        font-weight: 600;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    
+    p.hero-text {
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    section.container {
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        margin: auto;
+        
+    }
+
+    .top_button button {
+        margin-top: -8px;
+        width: 77%;
+        margin-right: 17%;
+    
+    }
+
+    form{
+        width: 72vw;
+        margin: 30px;
+    }
+
+    input {
+        margin: 10px;
+    }
+
+    .terms {
+        font-size: 10px;
+    }
+}

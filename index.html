@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="hero-section">
+      <h1 class="hero-title">Learn to code by watching others</h1>
+      <p class="hero-text">See how experienced delvelopers solve problems in real time. <br>
+        Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+    <section class="container">
+      <div class="top_button">
+        <a href="#"><button type="button"><strong>Try it free 7 days</strong> then $20/mo. thereafter.</button></a>
+      </div>
+
+      <div class="container-fluid">
+        <form id="form" action="#" method="post">
+          <div class="form-control">
+            <input type="text" name="First_Name" placeholder="First Name" id="fName">
+            <img class="error_icon" src="icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <input type="text" name="Last_Name" placeholder="Last Name" id="lName" >
+            <img class="error_icon" src="icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <input type="text" name="Email" placeholder="Email Address" id="email" >
+            <img class="error_icon" src="icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <input type="password" name="Password" placeholder="Password" id="password" >
+            <img class="error_icon" src="icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
+
+          <div class="bottom_button">
+            <button type="submit" value="submit" id="submit" class="btn">CLAIM YOUR FREE TRIAL</button>
+          </div>
+
+          <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
